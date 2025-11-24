@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Trading Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>ক্রিপ্টো ট্রেডিং এনালাইসিস</h1>
+            <p>লাইভ মার্কেট ডাটা এবং ট্রেডিং সিগন্যাল</p>
+        </header>
+
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="কয়েন খুঁজুন (যেমন: bitcoin, ethereum)">
+                <button id="searchBtn">খুঁজুন</button>
+            </div>
+        </div>
+
+        <div class="dashboard">
+            <div class="card">
+                <h2>📈 টপ ৫ পাম্প কয়েন</h2>
+                <div id="pumpCoins" class="coins-list">
+                    <div class="loading">লোড হচ্ছে...</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📉 টপ ৫ ডাম্প কয়েন</h2>
+                <div id="dumpCoins" class="coins-list">
+                    <div class="loading">লোড হচ্ছে...</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="analysis-card">
+            <h2>🤖 ট্রেডিং এনালাইসিস</h2>
+            <div id="tradingAnalysis">
+                <p>কয়েন সিলেক্ট করলে ট্রেডিং এনালাইসিস দেখানো হবে</p>
+            </div>
+        </div>
+
+        <div class="market-stats">
+            <div class="stat">
+                <span>আপডেট:</span>
+                <span id="lastUpdate">-</span>
+            </div>
+            <div class="stat">
+                <span>কয়েন:</span>
+                <span id="totalCoins">0</span>
+            </div>
+            <div class="stat">
+                <span>সেন্টিমেন্ট:</span>
+                <span id="marketSentiment">-</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
